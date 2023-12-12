@@ -5,6 +5,9 @@ import pandas as pd
 
 os.environ["CUDA_VISIBLE_DEVICE"] = "1"
 
+'''
+For more details on baseline implementation, please refer to the paper: Learning Task-Specific City Region Partition
+'''
 def tract_reg():
     trts = Tract.createAllTracts()
     trts_features = Tract.generateFeatures()
